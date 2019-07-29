@@ -30,7 +30,7 @@ public class WeatherServiceImpl implements WeatherService {
             String resultString = HttpRequestUtil.httpGet(ConstantUtil.WEATHER_URL, paramMap);
             log.info("resultString info:    {}", resultString);
             JSONObject jsonObject = JSONObject.parseObject(resultString);
-            if (jsonObject.containsKey(ConstantUtil.REASON_KEY) && ConstantUtil.REASON_TAG.equals(jsonObject.get(ConstantUtil.REASON_KEY))) {
+            if (jsonObject.containsKey(ConstantUtil.REASON_KEY) && ConstantUtil.WEATHER_REASON_TAG.equals(jsonObject.get(ConstantUtil.REASON_KEY))) {
                 WeatherForecast weatherForecast = JSONObject.parseObject(JSON.toJSONString(jsonObject.get("result")), WeatherForecast.class);
                 return weatherForecast;
             }
