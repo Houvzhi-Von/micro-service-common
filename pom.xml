@@ -17,6 +17,9 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+        <fastjson.version>1.2.58</fastjson.version>
+        <httpclient.version>4.5.9</httpclient.version>
+        <org.json.version>20180813</org.json.version>
     </properties>
 
     <dependencies>
@@ -47,6 +50,30 @@
             <optional>true</optional>
         </dependency>
         <!-- lombok -->
+
+        <!-- fast-json -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <!-- fast-json -->
+
+        <!-- http-client -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.6</version>
+        </dependency>
+        <!-- http-client -->
+
+        <!-- org.json -->
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${org.json.version}</version>
+        </dependency>
+        <!-- org.json -->
 
         <!--                &lt;!&ndash; mybatis &ndash;&gt;-->
         <!--                <dependency>-->
