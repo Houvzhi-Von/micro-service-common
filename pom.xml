@@ -20,6 +20,7 @@
         <fastjson.version>1.2.58</fastjson.version>
         <httpclient.version>4.5.9</httpclient.version>
         <org.json.version>20180813</org.json.version>
+        <nacos.discovery.version>0.9.0.RELEASE</nacos.discovery.version>
     </properties>
 
     <dependencies>
@@ -93,8 +94,9 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-            <version>0.9.0.RELEASE</version>
+            <version>${nacos.discovery.version}</version>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>
