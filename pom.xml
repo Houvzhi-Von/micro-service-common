@@ -17,7 +17,7 @@
     <properties>
         <java.version>1.8</java.version>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
-        <fastjson.version>1.2.58</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <httpclient.version>4.5.9</httpclient.version>
         <org.json.version>20180813</org.json.version>
         <nacos.discovery.version>0.9.0.RELEASE</nacos.discovery.version>
